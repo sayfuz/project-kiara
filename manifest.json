@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Autotyper",
+  "version": "1.0.0",
+  "description": "A basic example extension with only required keys",
+  "action": {
+    "default_icon": {
+      "16": "img/icon-16.png",
+      "32": "img/icon-32.png",
+      "48": "img/icon-48.png",
+      "128": "img/icon-128.png"
+    },
+    "default_popup": "html/popup.html"
+  },
+  "icons": {
+    "16": "img/icon-16.png",
+    "32": "img/icon-32.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  }
+}
