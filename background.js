@@ -6,7 +6,6 @@ chrome.runtime.onMessage.addListener(async function (request) {
   chrome.scripting.executeScript(
     {
       target: { tabId: tab.id },
-      code: 'let config = 1;',
       files: ['js/send.js']
     },
     (result) => {
