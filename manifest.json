@@ -17,5 +17,26 @@
     "32": "img/icon-32.png",
     "48": "img/icon-48.png",
     "128": "img/icon-128.png"
-  }
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications",
+    "tabs",
+    "webNavigation",
+    "contextMenus",
+    "scripting",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+      {
+          "matches": ["https://web.whatsapp.com/"],
+          "js": ["js/send.js"],
+          "run_at": "document_idle"
+      }
+  ]
 }
