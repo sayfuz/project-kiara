@@ -32,6 +32,6 @@ async function sendScript(scriptText) {
 
   return lines.length;
 }
-sendScript(config)
+sendScript('Test Message')
   .then((e) => console.log(`Code Completed, ${e} Messages sent`))
   .catch(console.error);
